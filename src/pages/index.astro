@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Background from '../components/Background.astro';
+import ArrowDownLink from '../components/ArrowDownLink.astro';
+import { getEntryBySlug } from 'astro:content';
+import Introduction from '../components/sections/Introduction.astro';
+
+const porfolioInfo = await getEntryBySlug('portfolio', 'info');
+const { title, mainDescription } = porfolioInfo.data;
+---
+
+<Layout title={title}>
+    <div class="relative">
+        <Background />
+        <div class="container relative mx-auto">
+            <Introduction />
+            <section
+                id="summary"
+                class="relative flex h-screen items-center justify-center px-8">
+                <p
+                    class="text-center font-serif text-xl font-light leading-loose text-white md:text-2xl md:leading-[2.5] lg:text-3xl lg:leading-[2.5]">
+                    {mainDescription}
+                </p>
+
+                <ArrowDownLink href="#info" />
+            </section>
+
+            <section
+                id="info"
+                class="relative flex h-screen items-center justify-center px-8 text-white">
+                <div class="grid w-96 grid-cols-2 grid-rows-3 gap-4 [&>*]:p-4">
+                    <div class="col-span-2 bg-slate-800">Work Experience</div>
+                </div>
+                <ArrowDownLink href="#projects" />
+            </section>
+        </div>
+    </div>
+</Layout>

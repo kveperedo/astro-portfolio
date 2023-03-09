@@ -1,0 +1,37 @@
+---
+export interface Props {
+    title: string;
+}
+
+import '@fontsource/major-mono-display';
+import '@fontsource/zilla-slab/300.css';
+import '@fontsource/zilla-slab/400.css';
+import '@fontsource/zilla-slab/500.css';
+import '@fontsource/zilla-slab/600.css';
+import '@fontsource/zilla-slab/700.css';
+import { getEntryBySlug } from 'astro:content';
+
+import '../../base.css';
+
+const porfolioInfo = await getEntryBySlug('portfolio', 'info');
+const { metaDescription } = porfolioInfo.data;
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html
+    lang="en"
+    class="scroll-smooth bg-slate-900 selection:bg-pink-400 selection:text-slate-900">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+        <meta name="description" content={metaDescription} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>
