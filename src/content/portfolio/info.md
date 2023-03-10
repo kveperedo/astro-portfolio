@@ -3,9 +3,9 @@ metaDescription: A full-time software engineer working at Lexagle Inc. in the Ph
 title: Portfolio | Kevin Von Erich Peredo
 
 name: kevin von erich peredo
-position: Frontend Engineer
+position: Fullstack Developer
 
-mainDescription: A Front-End Developer with experience in building and maintaining performant and responsive web applications. Proficient in languages like HTML, CSS, JavaScript, React.JS, Typescript; and modern libraries and frameworks, passionate about beautiful and functional UI design and development, experimenting with new and bleeding edge frontend libraries and technologies.
+mainDescription: A fullstack developer with experience in building and maintaining performant and responsive web applications. Proficient in languages like HTML, CSS, JavaScript, React.JS, Typescript; and modern libraries and frameworks, passionate about beautiful and functional UI design and development, experimenting with new and bleeding edge frontend and backend technologies.
 
 experience:
     [
