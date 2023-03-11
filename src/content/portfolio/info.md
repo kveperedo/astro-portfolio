@@ -5,7 +5,9 @@ title: Portfolio | Kevin Von Erich Peredo
 name: kevin von erich peredo
 position: Fullstack Developer
 
-mainDescription: A fullstack developer with experience in building and maintaining performant and responsive web applications. Proficient in languages like HTML, CSS, JavaScript, React.JS, Typescript; and modern libraries and frameworks, passionate about beautiful and functional UI design and development, experimenting with new and bleeding edge frontend and backend technologies.
+mainDescription:
+    - Hi! I'm a fullstack developer with a passion for building beautiful and functional web applications. With three years of experience in software development, I've had the opportunity to work with a variety of frontend tools and technologies, including HTML, CSS, ReactJS, TypeScript, and more.
+    - In this portfolio, you'll find examples of my work, including some of the web applications I've built. Please feel free to take a look and get in touch if you're interested in working together. I'm always looking for new challenges and opportunities to collaborate with other talented people.
 
 experience:
     [

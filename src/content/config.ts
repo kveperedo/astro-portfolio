@@ -7,7 +7,7 @@ const portfolioCollection = defineCollection({
 
         name: z.string(),
         position: z.string(),
-        mainDescription: z.string(),
+        mainDescription: z.array(z.string()),
 
         experience: z.array(
             z.object({

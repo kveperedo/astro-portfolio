@@ -16,11 +16,14 @@ const { title, mainDescription } = porfolioInfo.data;
             <Introduction />
             <section
                 id="summary"
-                class="relative flex h-screen items-center justify-center px-8">
-                <p
-                    class="text-center font-serif text-xl font-light leading-loose text-white md:text-2xl md:leading-[2.5] lg:text-3xl lg:leading-[2.5]">
-                    {mainDescription}
-                </p>
+                class="relative flex h-screen flex-col items-center justify-center px-8">
+                {
+                    mainDescription.map((paragraph) => (
+                        <p class="text-center font-serif text-lg mb-16 font-light leading-loose text-slate-100 md:text-2xl md:leading-[2.5] lg:text-3xl lg:leading-[2.5]">
+                            {paragraph}
+                        </p>
+                    ))
+                }
 
                 <ArrowDownLink href="#info" />
             </section>
