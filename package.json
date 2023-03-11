@@ -13,11 +13,12 @@
     "dependencies": {
         "@astrojs/react": "^1.2.2",
         "@astrojs/tailwind": "^3.0.0-beta.1",
+        "@astrojs/vercel": "^3.2.0",
         "@fontsource/major-mono-display": "^4.5.11",
         "@fontsource/zilla-slab": "^4.5.9",
         "@types/react": "^18.0.21",
         "@types/react-dom": "^18.0.6",
-        "astro": "^2.0.16",
+        "astro": "^2.1.2",
         "framer-motion": "^7.6.19",
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
