@@ -4,9 +4,11 @@ import Background from '../components/Background.astro';
 import ArrowDownLink from '../components/ArrowDownLink.astro';
 import { getEntryBySlug } from 'astro:content';
 import Introduction from '../components/sections/Introduction.astro';
+import Spacer from '../components/Spacer.astro';
+import Summary from '../components/sections/Summary.astro';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
-const { title, mainDescription } = porfolioInfo.data;
+const { title } = porfolioInfo.data;
 ---
 
 <Layout title={title}>
@@ -14,19 +16,8 @@ const { title, mainDescription } = porfolioInfo.data;
         <Background />
         <div class="container relative mx-auto">
             <Introduction />
-            <section
-                id="summary"
-                class="relative flex h-screen flex-col items-center justify-center px-8">
-                {
-                    mainDescription.map((paragraph) => (
-                        <p class="text-center font-serif text-lg mb-16 font-light leading-loose text-slate-100 md:text-2xl md:leading-[2.5] lg:text-3xl lg:leading-[2.5]">
-                            {paragraph}
-                        </p>
-                    ))
-                }
-
-                <ArrowDownLink href="#info" />
-            </section>
+            <Spacer />
+            <Summary />
 
             <section
                 id="info"
