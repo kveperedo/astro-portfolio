@@ -1,8 +1,15 @@
 ---
-const { href } = Astro.props;
+import clsx from 'clsx';
+
+interface Props {
+    href: string;
+    className?: string;
+}
+
+const { href, className } = Astro.props;
 ---
 
-<a class="absolute bottom-0 mb-9 cursor-pointer" href={href}>
+<a class={clsx('cursor-pointer', className)} href={href}>
     <svg
         class="h-6 w-6 animate-bounce text-slate-100"
         xmlns="http://www.w3.org/2000/svg"
