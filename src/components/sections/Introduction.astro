@@ -1,7 +1,7 @@
 ---
 import { getEntryBySlug } from 'astro:content';
-import ArrowDownLink from '../ArrowDownLink.astro';
 import Button from '../Button';
+import ScrollButton from '../ScrollButton';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
 const { name, position } = porfolioInfo.data;
@@ -10,12 +10,12 @@ const { name, position } = porfolioInfo.data;
 <main
     class="relative m-auto flex h-screen flex-col items-center justify-center gap-10">
     <h1
-        class="text-center font-mono text-5xl text-slate-50 md:text-6xl lg:text-8xl">
+        class="text-center font-mono text-5xl text-neutral-50 md:text-6xl lg:text-8xl">
         {name}
     </h1>
 
     <h4
-        class="text-center font-serif text-2xl tracking-wide text-slate-300 md:text-3xl lg:text-4xl">
+        class="text-center font-serif text-2xl tracking-wide text-neutral-300 md:text-3xl lg:text-4xl">
         {position}
     </h4>
     <Button />
@@ -28,7 +28,7 @@ const { name, position } = porfolioInfo.data;
             rel="noreferrer"
             href="mailto:kveperedo@gmail.com">
             <svg
-                class="h-6 w-6 text-white opacity-50 transition-opacity hover:opacity-100"
+                class="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor">
@@ -79,5 +79,5 @@ const { name, position } = porfolioInfo.data;
         </a>
     </div>
 
-    <ArrowDownLink className="absolute bottom-0 mb-9" href="#summary" />
+    <ScrollButton client:visible className="absolute bottom-0 mb-9" href="#summary" />
 </main>

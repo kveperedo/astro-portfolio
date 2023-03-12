@@ -1,0 +1,74 @@
+---
+import { getEntryBySlug } from 'astro:content';
+import clsx from 'clsx';
+import ScrollButton from '../ScrollButton';
+import Timeline from '../Timeline';
+
+const porfolioInfo = await getEntryBySlug('portfolio', 'info');
+const { experience, education, licensesAndCertifications } = porfolioInfo.data;
+---
+
+<section
+    id="info"
+    class="relative flex flex-col items-center justify-center px-8 py-16 pr-8 text-white">
+    <div>
+        <h1 class="mr-auto mb-16 text-left text-4xl">Experience</h1>
+
+        {
+            experience.map(
+                ({
+                    position,
+                    company,
+                    details,
+                    location,
+                    startDate,
+                    endDate,
+                    technologies,
+                }) => (
+                    <Timeline
+                        startDate={startDate}
+                        endDate={endDate ?? 'Present'}
+                        title={position}
+                        titleExtension={` at ${company}`}
+                        subtitle={location}
+                        tags={technologies}
+                        content={details}
+                    />
+                )
+            )
+        }
+
+        <h1 class="my-16 mr-auto text-left text-4xl">Education</h1>
+
+        <Timeline
+            startDate={education.startDate}
+            endDate={education.endDate}
+            title={education.course}
+            titleExtension={` at ${education.institution}`}
+            subtitle={education.location}
+            content={education.details}
+        />
+
+        <h1 class="my-16 mr-auto text-left text-4xl">
+            Licenses & Certificates
+        </h1>
+
+        {
+            licensesAndCertifications.map(({ name, issuer, date }, index) => {
+                const isNotFirstItem = index !== 0;
+
+                return (
+                    <Timeline
+                        className={clsx(isNotFirstItem && '-my-12')}
+                        startDate={date}
+                        title={name}
+                        subtitle={issuer}
+                        stickyDots={false}
+                    />
+                );
+            })
+        }
+    </div>
+
+    <ScrollButton client:visible className="mt-32" href="#projects" />
+</section>

@@ -12,7 +12,7 @@ summary:
 experience:
     [
         {
-            startDate: May 2022,
+            startDate: { month: May, year: 2022 },
             position: Junior Software Engineer,
             company: Lexagle Inc.,
             location: 'Makati City, Philippines',
@@ -35,8 +35,8 @@ experience:
                 ],
         },
         {
-            startDate: April 2021,
-            endDate: Feb 2020,
+            startDate: { month: Feb, year: 2020 },
+            endDate: { month: April, year: 2021 },
             position: Software Engineer,
             company: SQREEM Technologies Pte.,
             location: 'Quezon City, Philippines',
@@ -51,8 +51,8 @@ experience:
     ]
 
 education:
-    startDate: Aug 2014
-    endDate: May 2019
+    startDate: { month: Aug, year: 2014 }
+    endDate: { month: May, year: 2019 }
     course: BS Electronics Engineer
     institution: Saint Louis University
     location: Baguio City, Philippines
@@ -62,13 +62,17 @@ education:
 licensesAndCertifications:
     [
         {
-            date: July 2021,
+            date: { month: July, year: 2021 },
             name: Testing React with Jest and Testing Library,
             issuer: Udemy,
         },
-        { date: Sep 2020, name: Modern React with Redux, issuer: Udemy },
         {
-            date: Nov 2019,
+            date: { month: Sep, year: 2020 },
+            name: Modern React with Redux,
+            issuer: Udemy,
+        },
+        {
+            date: { month: Nov, year: 2019 },
             name: Electronics Engineer and Electronics Technician,
             issuer: Professional Regulation Commission,
         },

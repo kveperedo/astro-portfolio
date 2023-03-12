@@ -1,6 +1,11 @@
 import { z, defineCollection } from 'astro:content';
 
-const portfolioCollection = defineCollection({
+const Date = z.object({
+    month: z.string(),
+    year: z.number(),
+});
+
+export const portfolioCollection = defineCollection({
     schema: z.object({
         metaDescription: z.string(),
         title: z.string(),
@@ -11,8 +16,8 @@ const portfolioCollection = defineCollection({
 
         experience: z.array(
             z.object({
-                startDate: z.string(),
-                endDate: z.string().optional(),
+                startDate: Date,
+                endDate: Date.optional(),
                 position: z.string(),
                 company: z.string(),
                 location: z.string(),
@@ -22,8 +27,8 @@ const portfolioCollection = defineCollection({
         ),
 
         education: z.object({
-            startDate: z.string(),
-            endDate: z.string(),
+            startDate: Date,
+            endDate: Date,
             course: z.string(),
             institution: z.string(),
             location: z.string(),
@@ -32,7 +37,7 @@ const portfolioCollection = defineCollection({
 
         licensesAndCertifications: z.array(
             z.object({
-                date: z.string(),
+                date: Date,
                 name: z.string(),
                 issuer: z.string(),
             })
