@@ -12,12 +12,15 @@ const { summary } = porfolioInfo.data;
     {
         summary.map((paragraph) => (
             <h1
-                class="text-center font-serif text-lg font-light leading-loose text-slate-100 
-                md:text-2xl md:leading-[2.5] lg:text-3xl lg:leading-[2.5]">
+                class="text-center font-serif text-lg font-light leading-loose text-neutral-100 
+                md:text-xl md:leading-[2.5] lg:text-2xl lg:leading-[2.5]">
                 {paragraph}
             </h1>
         ))
     }
 
-    <ArrowDownLink className="md:absolute md:bottom-0 md:mb-9" href="#info" />
+    <ArrowDownLink
+        className="md:absolute md:bottom-0 mt-4 md:mt-0 md:mb-9"
+        href="#info"
+    />
 </section>

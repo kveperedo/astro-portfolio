@@ -1,11 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Background from '../components/Background.astro';
-import ArrowDownLink from '../components/ArrowDownLink.astro';
 import { getEntryBySlug } from 'astro:content';
 import Introduction from '../components/sections/Introduction.astro';
 import Spacer from '../components/Spacer.astro';
 import Summary from '../components/sections/Summary.astro';
+import Info from '../components/sections/Info.astro';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
 const { title } = porfolioInfo.data;
@@ -16,17 +16,14 @@ const { title } = porfolioInfo.data;
         <Background />
         <div class="container relative mx-auto">
             <Introduction />
+
             <Spacer />
+
             <Summary />
 
-            <section
-                id="info"
-                class="relative flex h-screen items-center justify-center px-8 text-white">
-                <div class="grid w-96 grid-cols-2 grid-rows-3 gap-4 [&>*]:p-4">
-                    <div class="col-span-2 bg-slate-800">Work Experience</div>
-                </div>
-                <ArrowDownLink href="#projects" />
-            </section>
+            <Spacer />
+
+            <Info />
         </div>
     </div>
 </Layout>
