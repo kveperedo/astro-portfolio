@@ -1,7 +1,7 @@
 ---
 import { getEntryBySlug } from 'astro:content';
 import clsx from 'clsx';
-import ArrowDownLink from '../ArrowDownLink.astro';
+import ScrollButton from '../ScrollButton';
 import Timeline from '../Timeline';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
@@ -70,5 +70,5 @@ const { experience, education, licensesAndCertifications } = porfolioInfo.data;
         }
     </div>
 
-    <ArrowDownLink className="mt-32" href="#projects" />
+    <ScrollButton client:visible className="mt-32" href="#projects" />
 </section>

@@ -1,6 +1,6 @@
 ---
 import { getEntryBySlug } from 'astro:content';
-import ArrowDownLink from '../ArrowDownLink.astro';
+import ScrollButton from '../ScrollButton';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
 const { summary } = porfolioInfo.data;
@@ -19,7 +19,8 @@ const { summary } = porfolioInfo.data;
         ))
     }
 
-    <ArrowDownLink
+    <ScrollButton
+        client:visible
         className="md:absolute md:bottom-0 mt-4 md:mt-0 md:mb-9"
         href="#info"
     />
