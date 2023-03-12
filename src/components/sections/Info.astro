@@ -27,7 +27,7 @@ const { experience, education, licensesAndCertifications } = porfolioInfo.data;
                 }) => (
                     <Timeline
                         startDate={startDate}
-                        endDate={endDate}
+                        endDate={endDate ?? 'Present'}
                         title={position}
                         titleExtension={` at ${company}`}
                         subtitle={location}

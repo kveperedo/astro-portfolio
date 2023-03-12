@@ -2,10 +2,15 @@ import clsx from 'clsx';
 import { portfolioCollection } from '../../content/config';
 import Tag from '../Tag';
 
+type Date = {
+    month: string;
+    year: number;
+};
+
 interface TimelineProps {
     className?: string;
-    startDate: { month: string; year: number };
-    endDate?: { month: string; year: number };
+    startDate: Date;
+    endDate?: Date | string;
     title: string;
     titleExtension?: string;
     subtitle: string;
@@ -25,6 +30,45 @@ const Timeline = ({
     endDate,
     stickyDots = true,
 }: TimelineProps) => {
+    const isEndDateObject = endDate && typeof endDate === 'object';
+
+    const renderLeftEndDate = () => {
+        if (!endDate) {
+            return null;
+        }
+
+        if (isEndDateObject) {
+            return (
+                <>
+                    <span className="text-2xl">-</span>
+                    <span className="mb-1 text-2xl text-neutral-200">
+                        {endDate.month}
+                    </span>
+                    <span className="text-neutral-300">{endDate.year}</span>
+                </>
+            );
+        }
+
+        return (
+            <>
+                <span className="text-2xl">-</span>
+                <span className="text-2xl text-neutral-200">{endDate}</span>
+            </>
+        );
+    };
+
+    const renderTitleEndDate = () => {
+        if (!endDate) {
+            return null;
+        }
+
+        if (isEndDateObject) {
+            return ` - ${endDate.month} ${endDate.year}`;
+        }
+
+        return ` - ${endDate}`;
+    };
+
     return (
         <div className={clsx('flex', className)}>
             <div
@@ -36,15 +80,7 @@ const Timeline = ({
                     {startDate.month}
                 </span>
                 <span className="text-neutral-300">{startDate.year}</span>
-                {endDate && (
-                    <>
-                        <span className="text-2xl">-</span>
-                        <span className="mb-1 text-2xl text-neutral-200">
-                            {endDate.month}
-                        </span>
-                        <span className="text-neutral-300">{endDate.year}</span>
-                    </>
-                )}
+                {renderLeftEndDate()}
             </div>
             <div className="relative flex-1 border-l-2 border-neutral-500 px-8 py-16 pr-0 md:px-10 md:pr-8">
                 <div
@@ -61,7 +97,7 @@ const Timeline = ({
                 <span className="text-neutral-300 md:hidden">
                     <>
                         {startDate.month} {startDate.year}
-                        {endDate && ` - ${endDate.month} ${endDate.year}`}
+                        {renderTitleEndDate()}
                     </>
                 </span>
 
