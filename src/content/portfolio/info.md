@@ -53,7 +53,7 @@ experience:
 education:
     startDate: { month: Aug, year: 2014 }
     endDate: { month: May, year: 2019 }
-    course: BS Electronics Engineer
+    course: BS Electronics Engineering
     institution: Saint Louis University
     location: Baguio City, Philippines
     details:

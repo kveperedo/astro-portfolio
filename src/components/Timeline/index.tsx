@@ -111,14 +111,16 @@ const Timeline = ({
                 {tags && (
                     <div className="mt-4 flex flex-wrap items-center gap-2">
                         {tags.map((label) => (
-                            <Tag>{label}</Tag>
+                            <Tag key={label}>{label}</Tag>
                         ))}
                     </div>
                 )}
                 {content && (
                     <ul className="mt-6 flex w-auto list-inside list-disc flex-col gap-3 rounded-2xl border-2 border-neutral-800 bg-neutral-900/40 p-6 shadow-xl backdrop-blur md:list-outside lg:w-[864px]">
                         {content.map((detail) => (
-                            <li className="font-thin leading-loose tracking-wide text-neutral-200 md:ml-6">
+                            <li
+                                key={detail}
+                                className="font-thin leading-loose tracking-wide text-neutral-200 md:ml-6">
                                 {detail}
                             </li>
                         ))}
