@@ -26,7 +26,8 @@ const { name, position } = porfolioInfo.data;
             class="cursor-pointer"
             target="_blank"
             rel="noreferrer"
-            href="mailto:kveperedo@gmail.com">
+            href="mailto:kveperedo@gmail.com"
+            aria-label="Email link">
             <svg
                 class="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +46,8 @@ const { name, position } = porfolioInfo.data;
             class="cursor-pointer"
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/kveperedo">
+            href="https://github.com/kveperedo"
+            aria-label="Github link">
             <svg
                 class="h-6 w-6 text-white opacity-50 transition-opacity hover:opacity-100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +65,8 @@ const { name, position } = porfolioInfo.data;
             class="cursor-pointer"
             target="_blank"
             rel="noreferrer"
-            href="https://www.linkedin.com/in/kveperedo/">
+            href="https://www.linkedin.com/in/kveperedo/"
+            aria-label="LinkedIn link">
             <svg
                 class="h-6 w-6 text-white opacity-50 transition-opacity hover:opacity-100"
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,5 +82,9 @@ const { name, position } = porfolioInfo.data;
         </a>
     </div>
 
-    <ScrollButton client:visible className="absolute bottom-0 mb-9" href="#summary" />
+    <ScrollButton
+        client:visible
+        className="absolute bottom-0 mb-9"
+        href="#summary"
+    />
 </main>

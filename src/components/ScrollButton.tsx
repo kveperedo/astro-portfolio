@@ -17,7 +17,8 @@ const ScrollButton = ({ href, className }: ScrollButtonProps) => {
     return (
         <button
             onClick={handleClick}
-            className={clsx('cursor-pointer', className)}>
+            className={clsx('cursor-pointer', className)}
+            aria-label="scroll-down">
             <svg
                 className="h-6 w-6 animate-bounce text-neutral-100"
                 xmlns="http:www.w3.org/2000/svg"
