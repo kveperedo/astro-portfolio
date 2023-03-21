@@ -1,0 +1,54 @@
+---
+import { getEntryBySlug } from 'astro:content';
+import clsx from 'clsx';
+import GithubIcon from '../icons/GithubIcon.astro';
+import LinkIcon from '../icons/LinkIcon.astro';
+import ScrollButton from '../ScrollButton';
+import Tag from '../Tag';
+
+const porfolioInfo = await getEntryBySlug('portfolio', 'info');
+const { projects } = porfolioInfo.data;
+---
+
+<section
+    id="projects"
+    class="relative flex flex-col items-center px-8 py-16 md:h-screen">
+    <h1 class="mb-20 text-4xl">Projects</h1>
+
+    <div class="flex flex-wrap justify-center gap-10">
+        {
+            projects.map(
+                ({ name, summary, date, githubLink, technologies, link }) => (
+                    <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6 shadow-xl backdrop-blur transition-colors hover:border-neutral-700 hover:bg-neutral-900/60 md:w-[512px] md:p-8">
+                        <div class="flex items-center justify-between">
+                            <h4 class="mb-1 text-2xl text-neutral-50">
+                                {name}
+                            </h4>
+
+                            <div class="flex items-center gap-4">
+                                <a href={githubLink} target="_blank">
+                                    <GithubIcon className="h-6 w-6 text-neutral-400 transition-colors hover:text-neutral-200" />
+                                </a>
+                                {link && (
+                                    <a href={link} target="_blank">
+                                        <LinkIcon className="h-6 w-6 cursor-pointer text-neutral-400 transition-colors hover:text-neutral-200" />
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                        <p class="mb-4 text-neutral-300">{date}</p>
+                        <div class="mb-8 flex flex-wrap items-center gap-2">
+                            {technologies.map((label) => (
+                                <Tag>{label}</Tag>
+                            ))}
+                        </div>
+
+                        <p class="leading-8 text-neutral-300">{summary}</p>
+                    </div>
+                )
+            )
+        }
+    </div>
+
+    <ScrollButton client:visible className="mt-32" href="#contact" />
+</section>

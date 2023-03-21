@@ -77,4 +77,40 @@ licensesAndCertifications:
             issuer: Professional Regulation Commission,
         },
     ]
+
+projects:
+    [
+        {
+            name: NextJS Personal Portfolio,
+            date: June 2022,
+            githubLink: https://github.com/kveperedo/portfolio,
+            link: https://portfolio.kevinp.app,
+            summary: 'A Next.js personal portfolio. I made this portfolio to showcase my projects, relevant skills and abilities, and basic information needed. A mobile-first design approach was used for better user experiences both in mobile and desktop. Technologies and tools used are Next.js, React, Typescript, Framer Motion and CSS Modules.',
+            technologies:
+                [
+                    'NextJS',
+                    'ReactJS',
+                    'Typescript',
+                    'Vercel',
+                    'Framer Motion',
+                    'CSS Modules',
+                ],
+        },
+        {
+            name: Noterist,
+            date: Nov 2020,
+            githubLink: https://github.com/kveperedo/noterist,
+            link: https://kp-noterist.web.app,
+            summary: 'A note-taking app using React and Redux, designed in Figma, and deployed using Firebase. This is my first major personal project made in React after I finished the React and Redux course. Current features include a scratchpad for quick note-taking and a note section for more complicated formatting.',
+            technologies:
+                ['ReactJS', 'Redux', 'Firebase', 'Javascript', 'HTML', 'CSS'],
+        },
+        {
+            name: Landslide Detection Interface,
+            date: May 2019,
+            githubLink: https://github.com/kveperedo/ProjectLandslide,
+            summary: 'A user interface for displaying landslide sensors data into graphs and text. Code base uses HTML, CSS and JavaScript (interface) and C/C++ (Arduino). This interface was primarily used for our thesis in the 5th year (ECE) and it served as a meaningful guide for the data from our landslide sensors.',
+            technologies: ['Javascript', 'HTML', 'CSS'],
+        },
+    ]
 ---

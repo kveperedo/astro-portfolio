@@ -42,6 +42,17 @@ export const portfolioCollection = defineCollection({
                 issuer: z.string(),
             })
         ),
+
+        projects: z.array(
+            z.object({
+                name: z.string(),
+                date: z.string(),
+                githubLink: z.string(),
+                link: z.string().optional(),
+                summary: z.string(),
+                technologies: z.array(z.string()),
+            })
+        ),
     }),
 });
 
