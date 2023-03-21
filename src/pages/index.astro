@@ -6,6 +6,7 @@ import Introduction from '../components/sections/Introduction.astro';
 import Spacer from '../components/Spacer.astro';
 import Summary from '../components/sections/Summary.astro';
 import Info from '../components/sections/Info.astro';
+import Projects from '../components/sections/Projects.astro';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
 const { title } = porfolioInfo.data;
@@ -24,6 +25,10 @@ const { title } = porfolioInfo.data;
             <Spacer />
 
             <Info />
+
+            <Spacer />
+
+            <Projects />
         </div>
     </div>
 </Layout>
