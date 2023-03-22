@@ -1,9 +1,9 @@
 ---
 import { getEntryBySlug } from 'astro:content';
-import Button from '../Button';
 import EmailIcon from '../icons/EmailIcon.astro';
 import GithubIcon from '../icons/GithubIcon.astro';
 import LinkedInIcon from '../icons/LinkedInIcon.astro';
+import LinkButtons from '../LinkButtons.astro';
 import ScrollButton from '../ScrollButton';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
@@ -11,6 +11,7 @@ const { name, position } = porfolioInfo.data;
 ---
 
 <main
+    id="intro"
     class="relative m-auto flex h-screen flex-col items-center justify-center gap-10">
     <h1
         class="text-center font-mono text-5xl text-neutral-50 md:text-6xl lg:text-8xl">
@@ -21,47 +22,27 @@ const { name, position } = porfolioInfo.data;
         class="text-center font-serif text-2xl tracking-wide text-neutral-300 md:text-3xl lg:text-4xl">
         {position}
     </h4>
-    <Button />
 
-    <div class="flex gap-6">
-        {/* TODO: replace with contact form */}
-        <a
-            class="cursor-pointer"
-            target="_blank"
-            rel="noreferrer"
-            href="mailto:kveperedo@gmail.com"
-            aria-label="Email link">
-            <EmailIcon
-                className="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
-            />
-        </a>
+    <button
+        id="contact-button"
+        class="rounded bg-pink-700 py-4 px-10 font-serif font-medium tracking-wider text-white shadow-[0_0_12px_rgba(255,47,47,0.5)] transition-all duration-500 hover:bg-pink-800 hover:shadow-pink-700">
+        Get in touch
+    </button>
 
-        <a
-            class="cursor-pointer"
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/kveperedo"
-            aria-label="Github link">
-            <GithubIcon
-                className="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
-            />
-        </a>
-
-        <a
-            class="cursor-pointer"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/kveperedo/"
-            aria-label="LinkedIn link">
-            <LinkedInIcon
-                className="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
-            />
-        </a>
-    </div>
+    <LinkButtons />
 
     <ScrollButton
         client:visible
-        className="absolute bottom-16 md:bottom-0 md:mb-9"
+        className="mt-8 md:absolute md:bottom-0 md:mb-9"
         href="#summary"
     />
 </main>
+
+<script>
+    const contactButton = document.getElementById('contact-button');
+
+    contactButton?.addEventListener('click', () => {
+        const contactSection = document.getElementById('contact');
+        contactSection?.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
