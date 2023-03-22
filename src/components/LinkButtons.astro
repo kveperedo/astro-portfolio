@@ -1,0 +1,47 @@
+---
+import clsx from 'clsx';
+import EmailIcon from './icons/EmailIcon.astro';
+import GithubIcon from './icons/GithubIcon.astro';
+import LinkedInIcon from './icons/LinkedInIcon.astro';
+
+type Props = {
+    className?: string;
+};
+
+const { className } = Astro.props;
+---
+
+<div class={clsx('flex gap-6', className)}>
+    <a
+        class="cursor-pointer"
+        target="_blank"
+        rel="noreferrer"
+        href="mailto:kveperedo@gmail.com"
+        aria-label="Email link">
+        <EmailIcon
+            className="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
+        />
+    </a>
+
+    <a
+        class="cursor-pointer"
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/kveperedo"
+        aria-label="Github link">
+        <GithubIcon
+            className="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
+        />
+    </a>
+
+    <a
+        class="cursor-pointer"
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.linkedin.com/in/kveperedo/"
+        aria-label="LinkedIn link">
+        <LinkedInIcon
+            className="h-6 w-6 text-neutral-50 opacity-50 transition-opacity hover:opacity-100"
+        />
+    </a>
+</div>

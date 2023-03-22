@@ -7,6 +7,9 @@ import Spacer from '../components/Spacer.astro';
 import Summary from '../components/sections/Summary.astro';
 import Info from '../components/sections/Info.astro';
 import Projects from '../components/sections/Projects.astro';
+import Contact from '../components/sections/Contact.astro';
+import LinkButtons from '../components/LinkButtons.astro';
+import ScrollButton from '../components/ScrollButton';
 
 const porfolioInfo = await getEntryBySlug('portfolio', 'info');
 const { title } = porfolioInfo.data;
@@ -29,6 +32,26 @@ const { title } = porfolioInfo.data;
             <Spacer />
 
             <Projects />
+
+            <Spacer />
+
+            <Contact />
+
+            <Spacer />
+
+            <footer class="my-16 flex flex-col items-center gap-8">
+                <ScrollButton
+                    client:visible
+                    direction="up"
+                    href="#intro"
+                    disableBounce
+                />
+                <span
+                    class="m-auto w-72 text-center font-mono text-neutral-200 hover:lowercase md:w-auto"
+                    >built And desiGned by keVin von eRicH peRedo</span
+                >
+                <LinkButtons />
+            </footer>
         </div>
     </div>
 </Layout>
