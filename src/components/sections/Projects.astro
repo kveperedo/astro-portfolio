@@ -17,7 +17,7 @@ const { projects } = porfolioInfo.data;
         {
             projects.map(
                 ({ name, summary, date, githubLink, technologies, link }) => (
-                    <div class="rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6 shadow-xl backdrop-blur transition-colors hover:border-neutral-700 hover:bg-neutral-900/60 md:w-[512px] md:p-8">
+                    <div class="flex flex-col rounded-2xl border border-neutral-800 bg-neutral-900/40 p-6 shadow-xl backdrop-blur transition-colors hover:border-neutral-700 hover:bg-neutral-900/60 md:w-[512px] md:p-8">
                         <div class="flex items-center justify-between">
                             <h4 class="mb-1 text-2xl text-neutral-50">
                                 {name}
@@ -41,7 +41,9 @@ const { projects } = porfolioInfo.data;
                             ))}
                         </div>
 
-                        <p class="leading-8 text-neutral-300">{summary}</p>
+                        <p class="mt-auto leading-8 text-neutral-300">
+                            {summary}
+                        </p>
                     </div>
                 )
             )
