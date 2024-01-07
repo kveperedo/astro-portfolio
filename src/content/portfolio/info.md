@@ -12,7 +12,35 @@ summary:
 experience:
     [
         {
+            startDate: { month: November, year: 2023 },
+            position: Software Engineer Technical Lead,
+            company: Lexagle Inc.,
+            location: 'Makati City, Philippines',
+            technologies:
+                [
+                    'ReactJS',
+                    'Typescript',
+                    'Javascript',
+                    'Material UI',
+                    'HTML',
+                    'CSS',
+                    'Figma',
+                    'Git',
+                    'Kotlin',
+                    'Spring Boot',
+                    'PostgreSQL',
+                ],
+            details:
+                [
+                    'Lead and mentor a team of software engineers in the design, development, and maintenance of features and optimizations for the Lexagle platform',
+                    'Facilitate all aspects of sprint ceremonies, ensuring seamless coordination and communication within the team. Manage sprint planning, review, retrospective, and daily stand-up meetings to enhance efficiency and collaboration throughout the development process',
+                    'Conduct regular code reviews, provide constructive feedback, and enforce coding standards to maintain code quality and foster a collaborative and learning-oriented team environment',
+                    'Spearhead the enhancement of the Lexagle design system library, aligning it with the brand identity and ensuring its seamless integration across the entire platform',
+                ],
+        },
+        {
             startDate: { month: May, year: 2021 },
+            endDate: { month: November, year: 2023 },
             position: Junior Software Engineer,
             company: Lexagle Inc.,
             location: 'Makati City, Philippines',
@@ -26,12 +54,15 @@ experience:
                     'CSS',
                     'Figma',
                     'Git',
+                    'Kotlin',
+                    'Spring Boot',
+                    'PostgreSQL',
                 ],
             details:
                 [
-                    'Work closely with product managers to translate business requirements and user stories into new features and optimizations for the Lexagle platform and UI/UX designers to translate mockups and prototypes to working UI interfaces',
-                    'Design, implement, and maintain a design system library based on the Lexagle’s brand identity used throughout the platform',
-                    'Perform bug fixes and code reviews, participate in the product development cycle, and collaborate with team members to implement features and changes to the web application',
+                    'Worked closely with product managers to translate business requirements and user stories into new features and optimizations for the Lexagle platform and UI/UX designers to translate mockups and prototypes to working UI interfaces',
+                    'Designed, implemented, and maintained a design system library based on the Lexagle’s brand identity used throughout the platform',
+                    'Performed bug fixes and code reviews, participated in the product development cycle, and collaborated with team members to implement features and changes to the web application',
                 ],
         },
         {
