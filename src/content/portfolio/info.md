@@ -112,11 +112,29 @@ licensesAndCertifications:
 projects:
     [
         {
+            name: Finance Tracker,
+            date: March 2024,
+            githubLink: https://github.com/kveperedo/finance-tracker,
+            link: https://finance.kevinperedo.dev,
+            summary: 'A finance tracker web application built with React, Remix, and Tailwind and deployed in Vercel. I created this project to help me track my own expenses and savings and also to practice my skills in building fullstack applications. This is an ongoing project that I plan to expand with more features such as investment tracking, dashboard analytics, and expense categorization.',
+            technologies:
+                [
+                    'ReactJS',
+                    'Remix',
+                    'Tailwind',
+                    'Typescript',
+                    'Drizzle',
+                    'PostgreSQL',
+                    'Zod',
+                    'Vercel',
+                ],
+        },
+        {
             name: Astro Personal Portfolio,
             date: March 2023,
             githubLink: https://github.com/kveperedo/astro-portfolio,
             link: https://www.kevinperedo.dev,
-            summary: 'An Astro-based web portfolio deployed in Vercel designed to showcase my skills and projects. I migrated my portfolio from Next.js to Astro after realizing that my site is mostly static and I wanted to prioritize site performance by reducing the amount of JavaScript. To ensure that my portfolio design was sleek and modern, I took a minimalist approach when designing in Figma, using a clean typography and a restrained color palette to create an elegant, understated look.',
+            summary: 'An Astro-based web portfolio deployed in Vercel designed to showcase my skills and projects. I migrated my portfolio from Next.js to Astro after realizing that my site is mostly static and I wanted to prioritize site performance by reducing the amount of JavaScript. To ensure that my portfolio design was sleek and modern, I used a clean typography and a restrained color palette to create an elegant, understated look.',
             technologies:
                 [
                     'Astro',
@@ -132,7 +150,7 @@ projects:
             name: NextJS Personal Portfolio,
             date: June 2022,
             githubLink: https://github.com/kveperedo/old-next-portfolio,
-            summary: 'A Next.js personal portfolio. I created this showcase my extensive range of projects, along with a comprehensive overview of my relevant skills, abilities, and information. The portfolio features a responsive layout that adapts to different screen sizes, ensuring that all content is easily accessible regardless of the device used to view it. I chose NextJS as the framework because of its features such as built-in SEO optimization, automatic image optimization, and server-side rendering.',
+            summary: 'A Next.js personal portfolio. I created this showcase my extensive range of projects, along with a comprehensive overview of my relevant skills, abilities, and information. I chose NextJS as the framework because of its features such as built-in SEO optimization, automatic image optimization, and server-side rendering.',
             technologies:
                 [
                     'NextJS',
