@@ -3,11 +3,10 @@ metaDescription: A full-time software engineer working at Lexagle Inc. in the Ph
 title: Portfolio | Kevin Von Erich Peredo
 
 name: kevin von erich peredo
-position: Fullstack Developer
+position: Software Engineer
 
 summary:
-    - Hello! I'm a fullstack developer with a passion for building beautiful and functional web applications. With three years of experience in software development, I've had the opportunity to work with a variety of frontend tools and technologies including HTML, CSS, ReactJS, TypeScript, and more. I'm also expanding my knowledge of fullstack development using tools like TRPC, Prisma, Vercel, and AWS.
-    - In this portfolio, you'll find examples of my work, including some of the web applications I've built. Please feel free to take a look and get in touch if you're interested in working together. I'm always looking for new challenges and opportunities to collaborate with other talented people.
+    - Software Engineer with five years of experience in designing, developing, and optimizing web applications. Proficient in modern frontend technologies such as React, TypeScript, Next.js, and TailwindCSS, as well as backend development with Node.js and PostgreSQL. Adept at leading teams, conducting code reviews, and implementing scalable UI/UX solutions. Passionate about building elegant, high-performing user interfaces and exploring cutting-edge web technologies. Experienced in agile methodologies and version control. Aspiring to contribute technical excellence and leadership insight to high-impact development initiatives.
 
 experience:
     [
@@ -32,10 +31,10 @@ experience:
                 ],
             details:
                 [
-                    'Lead and mentor a team of software engineers in the design, development, and maintenance of features and optimizations for the Lexagle platform',
-                    'Facilitate all aspects of sprint ceremonies, ensuring seamless coordination and communication within the team. Manage sprint planning, review, retrospective, and daily stand-up meetings to enhance efficiency and collaboration throughout the development process',
-                    'Conduct regular code reviews, provide constructive feedback, and enforce coding standards to maintain code quality and foster a collaborative and learning-oriented team environment',
-                    'Spearhead the enhancement of the Lexagle design system library, aligning it with the brand identity and ensuring its seamless integration across the entire platform',
+                    'Lead and mentor a team of software engineers, providing guidance on best coding practices, architecture, and development methodologies to ensure high-quality software delivery',
+                    'Facilitate and oversee all aspects of Agile sprint ceremonies, including sprint planning, daily stand-ups, reviews, and retrospectives, to ensure seamless coordination and team productivity',
+                    'Conduct in-depth code reviews to enforce best practices, maintainability, and performance optimization while fostering a culture of learning and continuous improvement',
+                    'Spearhead the enhancement and standardization of the Lexagle design system library, ensuring a consistent UI/UX across all platform components while aligning with brand identity and accessibility standards',
                 ],
         },
         {
@@ -60,9 +59,11 @@ experience:
                 ],
             details:
                 [
-                    'Worked closely with product managers to translate business requirements and user stories into new features and optimizations for the Lexagle platform and UI/UX designers to translate mockups and prototypes to working UI interfaces',
-                    'Designed, implemented, and maintained a design system library based on the Lexagle’s brand identity used throughout the platform',
-                    'Performed bug fixes and code reviews, participated in the product development cycle, and collaborated with team members to implement features and changes to the web application',
+                    'Collaborated closely with product managers to translate business requirements into functional, scalable web application features, ensuring alignment with company goals and user needs',
+                    'Partnered with UI/UX designers to transform high-fidelity mockups and prototypes into responsive, pixel-perfect, and accessible user interfaces using modern front-end technologies',
+                    'Designed, implemented, and maintained a scalable design system library, enhancing development efficiency by providing reusable UI components and ensuring visual consistency across the platform',
+                    'Assisted in debugging, troubleshooting, and optimizing the web application to improve performance, user experience, and stability',
+                    'Reviewed code contributions from team members, provided constructive feedback, and enforced best coding practices to maintain a high-quality codebase',
                 ],
         },
         {
@@ -111,24 +112,6 @@ licensesAndCertifications:
 
 projects:
     [
-        {
-            name: Finance Tracker,
-            date: March 2024,
-            githubLink: https://github.com/kveperedo/finance-tracker,
-            link: https://finance.kevinperedo.dev,
-            summary: 'A finance tracker web application built with React, Remix, and Tailwind and deployed in Vercel. I created this project to help me track my own expenses and savings and also to practice my skills in building fullstack applications. This is an ongoing project that I plan to expand with more features such as investment tracking, dashboard analytics, and expense categorization.',
-            technologies:
-                [
-                    'ReactJS',
-                    'Remix',
-                    'Tailwind',
-                    'Typescript',
-                    'Drizzle',
-                    'PostgreSQL',
-                    'Zod',
-                    'Vercel',
-                ],
-        },
         {
             name: Astro Personal Portfolio,
             date: March 2023,
