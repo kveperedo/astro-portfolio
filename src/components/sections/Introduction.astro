@@ -23,20 +23,12 @@ const { name, position } = porfolioInfo.data;
         {position}
     </h4>
 
-    <span class="flex">
-        <button
-            id="contact-button"
-            class="rounded rounded-r-none bg-pink-700 py-4 px-10 font-serif font-medium tracking-wider text-white shadow-[0_0_12px_rgba(255,47,47,0.5)] transition-all duration-500 hover:bg-pink-800 hover:shadow-pink-700">
-            Get in touch
-        </button>
-
-        <a
-            href="/resume.pdf"
-            target="_blank"
-            class="rounded rounded-l-none border border-neutral-800 bg-neutral-900/40 py-4 px-10 font-serif font-medium tracking-wider text-neutral-50 transition-all duration-500 hover:border-neutral-500">
-            Get resume
-        </a>
-    </span>
+    <a
+        href="/resume.pdf"
+        target="_blank"
+        class="rounded border border-neutral-800 bg-neutral-900/40 py-4 px-10 font-serif font-medium tracking-wider text-neutral-50 transition-all duration-500 hover:border-neutral-500">
+        Resume
+    </a>
 
     <LinkButtons />
 
@@ -46,12 +38,3 @@ const { name, position } = porfolioInfo.data;
         href="#summary"
     />
 </main>
-
-<script>
-    const contactButton = document.getElementById('contact-button');
-
-    contactButton?.addEventListener('click', () => {
-        const contactSection = document.getElementById('contact');
-        contactSection?.scrollIntoView({ behavior: 'smooth' });
-    });
-</script>
