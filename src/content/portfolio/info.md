@@ -3,10 +3,10 @@ metaDescription: A full-time software engineer working at Lexagle Inc. in the Ph
 title: Portfolio | Kevin Von Erich Peredo
 
 name: kevin von erich peredo
-position: Software Engineer
+position: Senior Frontend Engineer
 
 summary:
-    - Software Engineer with five years of experience in designing, developing, and optimizing web applications. Proficient in modern frontend technologies such as React, TypeScript, Next.js, and TailwindCSS, as well as backend development with Node.js and PostgreSQL. Adept at leading teams, conducting code reviews, and implementing scalable UI/UX solutions. Passionate about building elegant, high-performing user interfaces and exploring cutting-edge web technologies. Experienced in agile methodologies and version control. Aspiring to contribute technical excellence and leadership insight to high-impact development initiatives.
+    - Senior Frontend Engineer with 6+ years of experience building scalable, high-performance web applications using React, Next.js, and TypeScript. Strong expertise in designing reusable component libraries, optimizing frontend architecture, and improving developer experience through modern tooling and state management. Experienced in collaborating with designers and cross-functional teams to deliver accessible, responsive, and user-focused interfaces. Proven ability to mentor engineers, lead frontend initiatives, and drive complex technical projects from concept to production.
 
 experience:
     [
@@ -21,6 +21,7 @@ experience:
                     'Typescript',
                     'Javascript',
                     'Material UI',
+                    'Tailwind CSS',
                     'HTML',
                     'CSS',
                     'Figma',
@@ -31,10 +32,13 @@ experience:
                 ],
             details:
                 [
-                    'Lead and mentor a team of software engineers, providing guidance on best coding practices, architecture, and development methodologies to ensure high-quality software delivery',
-                    'Facilitate and oversee all aspects of Agile sprint ceremonies, including sprint planning, daily stand-ups, reviews, and retrospectives, to ensure seamless coordination and team productivity',
-                    'Conduct in-depth code reviews to enforce best practices, maintainability, and performance optimization while fostering a culture of learning and continuous improvement',
-                    'Spearhead the enhancement and standardization of the Lexagle design system library, ensuring a consistent UI/UX across all platform components while aligning with brand identity and accessibility standards',
+                    'Mentor and lead a team of developers through code reviews, architectural guidance, and frontend best practices; facilitate Agile sprint ceremonies including planning, stand-ups, reviews, and retrospectives',
+                    'Spearhead the upgrade of the company’s tech stack, modernizing dependencies and libraries (React, state management, supporting tooling) to improve performance, maintainability, and access to new platform features',
+                    'Strongly collaborate with designers in the creation and rollout of a new internal component library using react-aria-components and Tailwind CSS, leading the transition from a legacy Material UI-based system',
+                    'Partner closely with designers to shape accessible, scalable UI components, providing technical feedback on UX decisions, feasibility, and accessibility best practices',
+                    'Architected a reusable React data grid framework with sorting and filtering capabilities, designed to integrate seamlessly with existing backend APIs',
+                    'Led the incremental migration from Redux Saga to Redux Toolkit, improving developer experience, reducing complexity, and enhancing application performance',
+                    'Provide frontend architectural guidance and technical support to cross-functional teams, helping align implementation with shared standards and best practices',
                 ],
         },
         {
@@ -59,11 +63,12 @@ experience:
                 ],
             details:
                 [
-                    'Collaborated closely with product managers to translate business requirements into functional, scalable web application features, ensuring alignment with company goals and user needs',
-                    'Partnered with UI/UX designers to transform high-fidelity mockups and prototypes into responsive, pixel-perfect, and accessible user interfaces using modern front-end technologies',
-                    'Designed, implemented, and maintained a scalable design system library, enhancing development efficiency by providing reusable UI components and ensuring visual consistency across the platform',
-                    'Assisted in debugging, troubleshooting, and optimizing the web application to improve performance, user experience, and stability',
-                    'Reviewed code contributions from team members, provided constructive feedback, and enforced best coding practices to maintain a high-quality codebase',
+                    'Translated business requirements into functional, scalable frontend and backend features in collaboration with product managers and designers',
+                    'Contributed to the internal component library by building reusable components and custom hooks, implementing new features, and advising senior developers on implementation plans',
+                    'Conducted proof-of-concept (POC) evaluations of libraries for the company’s first component library and presented findings to senior engineers',
+                    'Helped migrate the main application from JavaScript to TypeScript, reducing runtime bugs, improving documentation, and enhancing maintainability',
+                    'Debugged, troubleshooted, and optimized code to enhance performance, stability, and user experience',
+                    'Reviewed code contributions, provided constructive feedback, and assisted teammates in resolving blocked tasks to maintain a high-quality codebase',
                 ],
         },
         {
@@ -75,9 +80,10 @@ experience:
             technologies: ['Javascript', 'HTML', 'CSS', 'Figma', 'Git'],
             details:
                 [
-                    'Designed and developed performant web applications based on design wireframes, for commercial and internal use, using both open-source and proprietary web technologies',
-                    'Used skills in debugging to check, refactor and optimize codebases to enhance user experience of web applications',
-                    'Suggested trending and tested web technologies that could minimize development time, optimize existing applications, and provide efficient web development',
+                    'Developed responsive, cross-browser web applications from detailed design wireframes with a focus on performance and accessibility',
+                    'Diagnosed and resolved frontend bugs, refactored legacy code, and optimized application performance',
+                    'Evaluated and integrated modern web technologies to improve code efficiency and accelerate feature delivery',
+                    'Contributed to the maintenance of proprietary and open-source web applications, ensuring compatibility with ongoing updates',
                 ],
         },
     ]
